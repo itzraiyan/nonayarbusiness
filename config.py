@@ -9,7 +9,7 @@ settings = {
     "AUTO_DEL": True,  # bool write True or False
     "STICKER_ID": "CAACAgUAAyEFAASAgUwqAAJh_mckw2STkeY1WMOHJGY4Hs9_1-2fAAIPFAACYLShVon-N6AFLnIiHgQ",
     "stk_del_timer": 1, # in seconds
-    "bot_admin": [2093552866] #e.g. 1963929292,38739292827 differetiate admins with a comma
+    "bot_admin": [6161189904] #e.g. 1963929292,38739292827 differetiate admins with a comma
 }
 
 HELP_MSG = """■ 𝗛𝗲𝗹𝗹𝗼, 𝗔𝗱𝗺𝗶𝗻𝘀!\n\n<blockquote expandable><b>ɴᴇᴇᴅ ʜᴇʟᴘ? ɪᴛ’s sɪᴍᴘʟᴇ: ᴊᴜsᴛ ᴋɴᴏᴄᴋ ᴏɴ <i>ʀᴀɪ ʏᴀɴ’s</i> ᴅᴏᴏʀ (ᴛʜᴀᴛ’s ᴍᴇ, ʙʏ ᴛʜᴇ ᴡᴀʏ). 🙋‍♂️ ᴡʜᴀᴛᴇᴠᴇʀ ɪᴛ ɪs—ǫᴜᴇsᴛɪᴏɴs, ᴄᴏɴᴄᴇʀɴs, ᴇxɪsᴛᴇɴᴛɪᴀʟ ᴄʀɪsᴇs ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜɪs ʙᴏᴛ—ᴊᴜsᴛ ᴀsᴋ.</b></blockquote>\n\n<blockquote expandable><b>ᴡʜʏ ɪs ᴛʜɪs ᴍᴇssᴀɢᴇ sᴏ sʜᴏʀᴛ? ʙᴇᴄᴀᴜsᴇ ᴛʜɪs ʙᴏᴛ ʜᴀs ᴀʟʀᴇᴀᴅʏ ᴄᴏɴsᴜᴍᴇᴅ ᴀ ʀɪᴅɪᴄᴜʟᴏᴜs ᴀᴍᴏᴜɴᴛ ᴏғ ᴍʏ ᴛɪᴍᴇ, ᴀɴᴅ ɪ’ᴍ ɴᴏᴛ ɪɴ ᴛʜᴇ ᴍᴏᴏᴅ ᴛᴏ ᴡʀɪᴛᴇ ᴀ ɴᴏᴠᴇʟ ʜᴇʀᴇ. 🤷‍♂️ sᴏ, ʏᴇᴀʜ, ʀᴇᴀᴄʜ ᴏᴜᴛ, ᴀɴᴅ ɪ’ʟʟ sᴏʀᴛ ɪᴛ ᴏᴜᴛ.</b></blockquote>\n\n<blockquote><b>ɴᴏᴡ ɢᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴏsᴇ ʟɪɴᴋs ʟɪᴋᴇ ᴛʜᴇ ʀᴏᴄᴋsᴛᴀʀ ᴀᴅᴍɪɴ ʏᴏᴜ ᴀʀᴇ! 💪</b></blockquote>
@@ -53,7 +53,7 @@ FSUBS = [
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Start message
-START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʜᴇʏ ᴛʜᴇʀᴇ, {mention} ✌🏻</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ ᴍɪᴛsᴜʜᴀ ᴍɪʏᴀᴍɪᴢᴜ, ᴀ ʏᴏᴜʀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ. 📂 I sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ ᴀ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ, ᴀɴᴅ ᴏᴛʜᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇᴍ ᴛʜʀᴏᴜɢʜ ᴀ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ. 🖇️ Lɪᴋᴇ ᴍʏ ᴏᴡɴ ᴏʀɢᴀɴɪᴢᴇᴅ ʟɪғᴇ, ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀ ғɪʟᴇs ɪɴ ᴏʀᴅᴇʀ! ❤️‍🩹</b></blockquote>")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʜᴇʏ ᴛʜᴇʀᴇ, {mention} ✌🏻 ɪ ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ʜᴀᴠɪɴɢ ᴀɴ ᴀᴡᴇsᴏᴍᴇ ᴅᴀʏ ❄️</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ ᴍɪᴛsᴜʜᴀ ᴍɪʏᴀᴍɪᴢᴜ, ᴀ ʏᴏᴜʀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ. 📂 I sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ ᴀ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ, ᴀɴᴅ ᴏᴛʜᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇᴍ ᴛʜʀᴏᴜɢʜ ᴀ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ. 🖇️ Lɪᴋᴇ ᴍʏ ᴏᴡɴ ᴏʀɢᴀɴɪᴢᴇᴅ ʟɪғᴇ, ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀ ғɪʟᴇs ɪɴ ᴏʀᴅᴇʀ! ❤️‍🩹</b></blockquote>")
 ADMINS = [6161189904]
 # Add other admin IDs here as needed, ensuring not to include OWNER_ID
 other_admin_ids = [5376373647]  # Replace with actual admin IDs
