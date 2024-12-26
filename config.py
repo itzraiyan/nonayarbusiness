@@ -9,14 +9,14 @@ settings = {
     "AUTO_DEL": True,  # bool write True or False
     "STICKER_ID": "CAACAgUAAyEFAASAgUwqAAJh_mckw2STkeY1WMOHJGY4Hs9_1-2fAAIPFAACYLShVon-N6AFLnIiHgQ",
     "stk_del_timer": 1, # in seconds
-    "bot_admin": [2093552866] #e.g. 1963929292,38739292827 differetiate admins with a comma
+    "bot_admin": [6161189904] #e.g. 1963929292,38739292827 differetiate admins with a comma
 }
 
 HELP_MSG = """■ 𝗛𝗲𝗹𝗹𝗼, 𝗔𝗱𝗺𝗶𝗻𝘀!\n\n<blockquote expandable><b>ɴᴇᴇᴅ ʜᴇʟᴘ? ɪᴛ’s sɪᴍᴘʟᴇ: ᴊᴜsᴛ ᴋɴᴏᴄᴋ ᴏɴ <i>ʀᴀɪ ʏᴀɴ’s</i> ᴅᴏᴏʀ (ᴛʜᴀᴛ’s ᴍᴇ, ʙʏ ᴛʜᴇ ᴡᴀʏ). 🙋‍♂️ ᴡʜᴀᴛᴇᴠᴇʀ ɪᴛ ɪs—ǫᴜᴇsᴛɪᴏɴs, ᴄᴏɴᴄᴇʀɴs, ᴇxɪsᴛᴇɴᴛɪᴀʟ ᴄʀɪsᴇs ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜɪs ʙᴏᴛ—ᴊᴜsᴛ ᴀsᴋ.</b></blockquote>\n\n<blockquote expandable><b>ᴡʜʏ ɪs ᴛʜɪs ᴍᴇssᴀɢᴇ sᴏ sʜᴏʀᴛ? ʙᴇᴄᴀᴜsᴇ ᴛʜɪs ʙᴏᴛ ʜᴀs ᴀʟʀᴇᴀᴅʏ ᴄᴏɴsᴜᴍᴇᴅ ᴀ ʀɪᴅɪᴄᴜʟᴏᴜs ᴀᴍᴏᴜɴᴛ ᴏғ ᴍʏ ᴛɪᴍᴇ, ᴀɴᴅ ɪ’ᴍ ɴᴏᴛ ɪɴ ᴛʜᴇ ᴍᴏᴏᴅ ᴛᴏ ᴡʀɪᴛᴇ ᴀ ɴᴏᴠᴇʟ ʜᴇʀᴇ. 🤷‍♂️ sᴏ, ʏᴇᴀʜ, ʀᴇᴀᴄʜ ᴏᴜᴛ, ᴀɴᴅ ɪ’ʟʟ sᴏʀᴛ ɪᴛ ᴏᴜᴛ.</b></blockquote>\n\n<blockquote><b>ɴᴏᴡ ɢᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴏsᴇ ʟɪɴᴋs ʟɪᴋᴇ ᴛʜᴇ ʀᴏᴄᴋsᴛᴀʀ ᴀᴅᴍɪɴ ʏᴏᴜ ᴀʀᴇ! 💪</b></blockquote>
 """  # shown only to admins
 
 # Bot token @Botfather
-TG_BOT_TOKEN = '7594941060:AAG7d86EiyUqqw73WuG5FemHgMP3kIYyEvs'
+TG_BOT_TOKEN = '7594941060:AAE936BjRKNZeYYxGis_URSz9YpnJ4L3YqE'
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26684254"))
 
@@ -24,7 +24,7 @@ APP_ID = int(os.environ.get("APP_ID", "26684254"))
 API_HASH = os.environ.get("API_HASH", "fc836096a68be3a4fcd7594cb3d9326f")
 
 # Your db channel Id
-DB_CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002456061680"))
+DB_CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002252869832")
 
 # NAME OF OWNER
 OWNER = os.environ.get("OWNER", "Rai Yan")
@@ -41,19 +41,19 @@ if OWNER_ID not in SUDO:
 PORT = os.environ.get("PORT", "8108")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mitsuha:mitsuha@cluster0.7zztr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://okarun:okarun@cluster0.phbxh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 # FSUBS configuration
 FSUBS = [
-    {'_id': -1002349345920, "CHANNEL_NAME": "Anime Movies"},
+    {'_id': -1002230781817, "CHANNEL_NAME": "Ongoing Anime Weebs"},
 ]
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Start message
-START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʜᴇʏ ᴛʜᴇʀᴇ, {mention} ✌🏻</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ ᴍɪᴛsᴜʜᴀ ᴍɪʏᴀᴍɪᴢᴜ, ᴀ ʏᴏᴜʀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ. 📂 I sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ ᴀ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ, ᴀɴᴅ ᴏᴛʜᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇᴍ ᴛʜʀᴏᴜɢʜ ᴀ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ. 🖇️ Lɪᴋᴇ ᴍʏ ᴏᴡɴ ᴏʀɢᴀɴɪᴢᴇᴅ ʟɪғᴇ, ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀ ғɪʟᴇs ɪɴ ᴏʀᴅᴇʀ! ❤️‍🩹</b></blockquote>")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʜᴇʏ ᴛʜᴇʀᴇ, {mention}✌🏻 ɪ ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ʜᴀᴠɪɴɢ ᴀɴ ᴀᴡᴇsᴏᴍᴇ ᴅᴀʏ ❄️</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ ᴋᴇɴ ᴛᴀᴋᴀᴋᴜʀᴀ, ᴀ ʏᴏᴜʀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ. 📂 I sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ ᴀ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ, ᴀɴᴅ ᴏᴛʜᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇᴍ ᴛʜʀᴏᴜɢʜ ᴀ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ. 🖇️ Lɪᴋᴇ ᴍʏ ᴏᴡɴ ᴏʀɢᴀɴɪᴢᴇᴅ ʟɪғᴇ, ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀ ғɪʟᴇs ɪɴ ᴏʀᴅᴇʀ! ❤️‍🩹</b></blockquote>")
 ADMINS = [6161189904]
 # Add other admin IDs here as needed, ensuring not to include OWNER_ID
 other_admin_ids = [5376373647]  # Replace with actual admin IDs
