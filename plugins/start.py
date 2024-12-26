@@ -459,7 +459,7 @@ async def start_command(client: Client, message: Message):
                 ]
             ]
         )
-      #  start_sticker = await client.send_sticker(chat_id=message.chat.id, sticker=get_sticker)
+        start_sticker = await client.send_sticker(chat_id=message.chat.id, sticker=get_sticker)
         
         
         await client.send_photo(
@@ -478,7 +478,7 @@ async def start_command(client: Client, message: Message):
         )
         await asyncio.sleep(settings["stk_del_timer"])
         
-   #     await start_sticker.delete()
+        await start_sticker.delete()
         
         return
     else:
@@ -493,7 +493,7 @@ async def start_command(client: Client, message: Message):
                 ]
             ]
         )
-       # start_sticker = await client.send_sticker(chat_id=message.chat.id, sticker=get_sticker)
+        start_sticker = await client.send_sticker(chat_id=message.chat.id, sticker=get_sticker)
         await asyncio.sleep(settings["stk_del_timer"])
         
         
@@ -511,7 +511,7 @@ async def start_command(client: Client, message: Message):
             has_spoiler=SPOILER,
             reply_markup=reply_markup
         )
-       # await start_sticker.delete()
+        await start_sticker.delete()
         
         return
         
