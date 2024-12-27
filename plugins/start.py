@@ -149,7 +149,7 @@ def force_sub(func):
 
             
             await message.reply_photo(
-                photo='https://envs.sh/oDu.png',
+                photo='https://envs.sh/odi.jpg',
                 caption=channels_message.format(mention=message.from_user.mention),
                 has_spoiler=SPOILER,
                 reply_markup=InlineKeyboardMarkup(buttons)
@@ -464,7 +464,7 @@ async def start_command(client: Client, message: Message):
         
         await client.send_photo(
             chat_id=message.chat.id,
-            photo="https://envs.sh/oDQ.jpg",
+            photo="https://envs.sh/odt.jpg",
             caption=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
@@ -499,7 +499,7 @@ async def start_command(client: Client, message: Message):
         
         await client.send_photo(
             chat_id=message.chat.id,
-            photo="https://envs.sh/oDQ.jpg",
+            photo="https://envs.sh/odt.jpg",
             caption=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
