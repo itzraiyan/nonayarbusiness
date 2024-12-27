@@ -16,7 +16,7 @@ HELP_MSG = """■ 𝗛𝗲𝗹𝗹𝗼, 𝗔𝗱𝗺𝗶𝗻𝘀!\n\n<blockquote
 """  # shown only to admins
 
 # Bot token @Botfather
-TG_BOT_TOKEN = '7786549051:AAEqSb5ketYvO4__lcjgjuMglgL_MMOF3rU'
+TG_BOT_TOKEN = '7529865522:AAH56BZLWvO6BWcoa5Ho3I3CRTIwRazRcX4'
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26684254"))
 
@@ -41,7 +41,7 @@ if OWNER_ID not in SUDO:
 PORT = os.environ.get("PORT", "8108")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ulquiorra:ulquiorra@cluster0.72cbp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://makise:makise@cluster0.wopsj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 # FSUBS configuration
@@ -53,7 +53,7 @@ FSUBS = [
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Start message
-START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ᴛʛʜ, {mention}✌🏻. I ʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴄᴀʀʀʏɪɴɢ ᴏᴜᴛ ᴛʜɪs ᴅᴀʏ ᴡɪᴛʜ ᴘᴜʀᴘᴏsᴇ ᴀɴᴅ ʀᴇsᴏʟᴜᴛɪᴏɴ 🌓.</b></blockquote>\n\n<blockquote expandable><b>I ᴀᴍ Uʟǫᴜɪᴏʀʀᴀ Cɪғᴇʀ, ᴀ ʙᴏᴛ ᴛᴀsᴋᴇᴅ ᴡɪᴛʜ ᴏʀɢᴀɴɪᴢɪɴɢ ʏᴏᴜʀ ғɪʟᴇs ᴀɴᴅ ᴇɴsᴜʀɪɴɢ ᴛʜᴇɪʀ ᴘʀᴇsᴇʀᴠᴀᴛɪᴏɴ 📂. Lɪᴋᴇ ᴛʜᴇ ᴇᴍᴘᴛɪɴᴇss ᴡɪᴛʜɪɴ ᴍᴇ, ᴛʜᴇʀᴇ ᴡɪʟʟ ʙᴇ ɴᴏ ᴄʟᴜᴛᴛᴇʀ ᴏʀ ᴅɪsᴏʀᴅᴇʀ. Lᴇᴛ ᴍᴇ ᴋᴇᴇᴘ ᴛʜɪɴɢs ᴘᴇʀғᴇᴄᴛ, ғᴏʀ ᴇᴠᴇɴ ᴄʜᴀᴏs ʜᴀs ɴᴏ ᴘʟᴀᴄᴇ ɪɴ ᴍʏ ᴡᴏʀʟᴅ 🕊️.</b></blockquote>")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>Hᴇʏ, {mention}✌🏻. I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴀs ᴇɴᴇʀɢᴇᴛɪᴄ ᴀs ᴀ ᴘʜᴏᴛᴏɴ ʙᴇᴀᴍ 🚀!</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ Mᴀᴋɪsᴇ Kᴜʀɪsᴜ, ᴀ ʜɪɢʜʟʏ ᴏʀɢᴀɴɪᴢᴇᴅ ғɪʟᴇ ʙᴏᴛ ᴅᴇsɪɢɴᴇᴅ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜʀ ғɪʟᴇs ɪɴ ᴏʀᴅᴇʀ ᴀɴᴅ ʀᴇᴀᴅɪʟʏ ᴀᴄᴄᴇssɪʙʟᴇ 📂. Wɪᴛʜ ᴍʏ sʏsᴛᴇᴍᴀᴛɪᴄ ᴀᴘᴘʀᴏᴀᴄʜ, ᴇᴠᴇɴ ᴛʜᴇ ᴍᴏsᴛ ᴄᴏᴍᴘʟᴇx ᴛɪᴍᴇʟɪɴᴇs ᴄᴀɴ ʙᴇ ᴍᴀɴᴀɢᴇᴅ 🧠✨. Lᴇᴛ's ᴀᴠᴏɪᴅ ᴘᴀʀᴀᴅᴏxᴇs ᴀɴᴅ ᴋᴇᴇᴘ ᴛʜɪɴɢs ᴏɴ ᴛʀᴀᴄᴋ, sʜᴀʟʟ ᴡᴇ? 💡</b></blockquote>")
 ADMINS = [6161189904]
 # Add other admin IDs here as needed, ensuring not to include OWNER_ID
 other_admin_ids = [5376373647]  # Replace with actual admin IDs
