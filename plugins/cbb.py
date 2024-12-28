@@ -5,6 +5,7 @@ from bot import Bot
 from config import OWNER_ID, HELP_MSG, OWNER
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
+
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
