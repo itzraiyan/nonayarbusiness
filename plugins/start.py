@@ -134,30 +134,31 @@ def force_sub(func):
                     not_joined_channels.append(channel_name)
                     link = await get_invite_link(channel_id)  # Attempt to get the invite link
                     if link:
-                        buttons.append([InlineKeyboardButton(channel_name, url=link)])
+                        buttons.append(InlineKeyboardButton(channel_name, url=link))
                     else:
-                        buttons.append([InlineKeyboardButton("Error creating invite link", url="https://t.me/Manga_Yugen")])            
+                        buttons.append(InlineKeyboardButton("Error creating invite link", url="https://t.me/Manga_Yugen"))            
 
             # Prepare "Try Again" button if applicable
             from_link = message.text.split(" ")
+            n = 2
+            buttons = [buttons[i:i+n] for i in range(0, len(buttons), n)]
             if len(from_link) > 1:
                 try_again_link = f"https://t.me/{client.username}/?start={from_link[1]}"
                 buttons.append([InlineKeyboardButton("Try Again", url=try_again_link)])
 
-            channels_message =("<blockquote><b>ʙᴀᴋᴀᴀ {mention} ‼️</b></blockquote>\n\n<blockquote><b>ɪ ʜᴀᴠᴇ ᴀ ʀᴇǫᴜᴇsᴛ ғᴏʀ ʏᴏᴜ! ᴛᴏ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ(s) ʏᴏᴜ ʀᴇǫᴜᴇsᴛᴇᴅ, ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ(s). ᴀғᴛᴇʀ ᴊᴏɪɴɪɴɢ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴛʀʏ ᴀɢᴀɪɴ' ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ғɪʟᴇs!</b></blockquote>")
+            channels_message = (
+                "<blockquote><b>Join these channels:</b></blockquote>\n" +
+                "\n".join(f"<b>• {name}</b>" for name in not_joined_channels)
+            )
 
-
-            
             await message.reply_photo(
-                photo='https://envs.sh/oDu.png',
-                caption=channels_message.format(mention=message.from_user.mention),
+                photo='plugins/image/fsub.jpg',
+                caption=channels_message,
                 has_spoiler=SPOILER,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
     return wrapper
-
-
 
 #Commands
 @Bot.on_message(filters.command("fsubs") & filters.private)
