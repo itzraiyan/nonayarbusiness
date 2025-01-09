@@ -146,7 +146,7 @@ def force_sub(func):
             final_btn = []
             for item in buttons:
                 if len(temp_row)>n:
-                    final_btn.append([temp_row])
+                    final_btn.append(temp_row)
                     temp_row.clear()
                 temp_row.append(item)
             buttons = final_btn
