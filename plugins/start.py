@@ -104,6 +104,7 @@ def is_user_subscribed(statuses):
         for status in statuses.values() if status is not None
     ) and len(statuses) > 0  # Ensure at least one channel was checked
 
+
 def force_sub(func):
     """Implement Force Subs using @force_sub before any command function."""
     async def wrapper(client, message):
@@ -134,9 +135,9 @@ def force_sub(func):
                     not_joined_channels.append(channel_name)
                     link = await get_invite_link(channel_id)  # Attempt to get the invite link
                     if link:
-                        buttons.append(InlineKeyboardButton(channel_name, url=link))
+                        buttons.append([InlineKeyboardButton(channel_name, url=link)])
                     else:
-                        buttons.append(InlineKeyboardButton("Error creating invite link", url="https://t.me/Manga_Yugen"))            
+                        buttons.append([InlineKeyboardButton("Error creating invite link", url="https://t.me/Manga_Yugen")])            
 
             # Prepare "Try Again" button if applicable
             from_link = message.text.split(" ")
@@ -159,7 +160,7 @@ def force_sub(func):
             )
 
     return wrapper
-
+    
 #Commands
 @Bot.on_message(filters.command("fsubs") & filters.private)
 async def fsublist(client, message):
