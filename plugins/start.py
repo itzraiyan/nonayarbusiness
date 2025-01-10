@@ -144,10 +144,6 @@ def force_sub(func):
             # Prepare "Try Again" button if applicable
             from_link = message.text.split(" ")
             
-                    final_btn.append(temp_row)
-                    temp_row.clear()
-                temp_row.append(item)
-            buttons = final_btn
             #buttons = [buttons[i:i+n] for i in range(0, len(buttons), n)]
             if len(from_link) > 1:
                 try_again_link = f"https://t.me/{client.username}/?start={from_link[1]}"
@@ -158,7 +154,7 @@ def force_sub(func):
                 "\n".join(f"<b>• {name}</b>" for name in not_joined_channels)
             )
             n = 2
-            buttons = [buttons[i:i+n] for i in range(0, len(l), n)]
+            buttons = [buttons[i:i+n] for i in range(0, len(buttons), n)]
             await msg.exit_text(
                 text=channels_message,
                 has_spoiler=SPOILER,
