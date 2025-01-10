@@ -127,24 +127,23 @@ def force_sub(func):
             await func(client, message)  # Added await
         else:
             logger.info(f"User {user_id} failed the subscription check.")
-            not_joined_channels = []
+            channels = []
             buttons = []
-            joined_channels = []
             # Collect channels user is not subscribed to and prepare buttons
             for channel in fsubs:
                 channel_id = channel['_id']
                 channel_name = channel['CHANNEL_NAME']
 
                 # Check if the user is a member of the channel
-                if statuses.get(channel_id) not in {ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER}:
-                    not_joined_channels.append(channel_name)
+                if statuses.get(channel_id) in {ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER}:
+                    channels.append((channel_name, "Joined"))
                     link = await get_invite_link(channel_id)  # Attempt to get the invite link
                     if link:
                         buttons.append(InlineKeyboardButton(channel_name, url=link))
                     else:
                         buttons.append(InlineKeyboardButton("Error creating invite link", url="https://t.me/Manga_Yugen"))            
                 else:
-                    joined_channels.append(channel_name)
+                    channels.append((channel_name, "Not Joined"))
             # Prepare "Try Again" button if applicable
             from_link = message.text.split(" ")
             #buttons = [buttons[i:i+n] for i in range(0, len(buttons), n)]
@@ -152,10 +151,8 @@ def force_sub(func):
                 try_again_link = f"https://t.me/{client.username}/?start={from_link[1]}"
                 buttons.append(InlineKeyboardButton("Try Again", url=try_again_link))
             channels_message = (
-                "<blockquote><b>Joined channels:</b></blockquote>\n" +
-                "\n".join(f"<b>{i}. {name}</b>" for i, name in enumerate(joined_channels))
-                "\n<blockquote><b>Not Joined channels:</b></blockquote>\n" +
-                "\n".join(f"<b>{i}. {name}</b>" for i, name in enumerate(not_joined_channels))
+                "<blockquote><b>Channels Status:</b></blockquote>\n" +
+                "\n".join(f"<b>{i+1}. {name}</b>\nStatus: `{userstatus}`\n" for i, (name, userstatus) in enumerate(channels))
             )
             n = 2
             buttons = [buttons[i:i+n] for i in range(0, len(buttons), n)]
