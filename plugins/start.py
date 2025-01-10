@@ -155,7 +155,7 @@ def force_sub(func):
             )
             n = 2
             buttons = [buttons[i:i+n] for i in range(0, len(buttons), n)]
-            await msg.exit_text(
+            await msg.edit_text(
                 text=channels_message,
                 has_spoiler=SPOILER,
                 reply_markup=InlineKeyboardMarkup(buttons)
