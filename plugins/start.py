@@ -159,7 +159,7 @@ def force_sub(func):
                 channels_message = (
                 "<blockquote><b>Jᴏɪɴ Tʜᴇsᴇ Cʜᴀɴɴᴇʟ(s) ᴛᴏ Aᴄᴄᴇss ᴛʜɪs Bᴏᴛ!</b></blockquote>\n\n" +
                 "\n".join(f"<b>{i+1}. {name}</b>\n<b>Status:</b> <code>{userstatus}</code>\n" for i, (name, userstatus) in enumerate(channels_list)) +
-                "\n\n<b>After joining all channels, click on the 'Try Again!' button below.</b>"
+                "\n<blockquote><b>Aғᴛᴇʀ ᴊᴏɪɴɪɴɢ ᴀʟʟ ᴄʜᴀɴɴᴇʟs, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'Tʀʏ Aɢᴀɪɴ!' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ.</b></blockquote>"
                 )
                 logger.debug(f"Channels message: {channels_message}")
 
