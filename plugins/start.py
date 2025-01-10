@@ -109,7 +109,7 @@ def force_sub(func):
     """Implement Force Subs using @force_sub before any command function."""
     async def wrapper(client, message):
         SPOILER = get_spoiler()
-        msg = await message.reply_photo(caption="<code>Connecting!</code>", photo="plugins/image/fsub.jpg", has_spoiler=SPOILER)
+        msg = await message.reply_photo(caption="<code>Connecting!</code>", photo="https://envs.sh/9vi.jpg", has_spoiler=SPOILER)
         user_id = message.from_user.id
         
         try:
