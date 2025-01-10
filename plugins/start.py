@@ -140,10 +140,10 @@ def force_sub(func):
                     channel_name = channel['CHANNEL_NAME']
 
                     if statuses.get(channel_id) in {ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER}:
-                        t = (str(channel_name), "Joined✅")
+                        t = (str(channel_name), "Joined ✅")
                         channels_list.append(t)
                     else:
-                        t = (str(channel_name), "Not Joined❌")
+                        t = (str(channel_name), "Not Joined ❌")
                         channels_list.append(t)
                         link = await get_invite_link(channel_id)  # Attempt to get the invite link
                         if link:
@@ -157,8 +157,9 @@ def force_sub(func):
                     buttons.append(InlineKeyboardButton("Try Again!", url=try_again_link))
                 await msg.edit_text("<code>Loading!!!</code>")
                 channels_message = (
-                    "<blockquote><b>Jᴏɪɴ Tʜᴇsᴇ Cʜᴀɴɴᴇʟ(s) ᴛᴏ Aᴄᴄᴇss ᴛʜɪs Bᴏᴛ!</b></blockquote>\n\n" +
-                    "\n".join(f"<b>{i+1}. {name}</b>\n<b>Status:</b> <code>{userstatus}</code>\n" for i, (name, userstatus) in enumerate(channels_list))
+                "<blockquote><b>Jᴏɪɴ Tʜᴇsᴇ Cʜᴀɴɴᴇʟ(s) ᴛᴏ Aᴄᴄᴇss ᴛʜɪs Bᴏᴛ!</b></blockquote>\n\n" +
+                "\n".join(f"<b>{i+1}. {name}</b>\n<b>Status:</b> <code>{userstatus}</code>\n" for i, (name, userstatus) in enumerate(channels_list)) +
+                "\n\n<b>After joining all channels, click on the 'Try Again!' button below.</b>"
                 )
                 logger.debug(f"Channels message: {channels_message}")
 
