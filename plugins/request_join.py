@@ -9,7 +9,7 @@ from html import escape
 
 logger = logging.getLogger(__name__)
 
-@Bot.on_chat_join_request(filters.channel)
+#@Bot.on_chat_join_request(filters.channel)
 async def handle_join_request(client, join_request: ChatJoinRequest):
     user_id = join_request.from_user.id
     channel_id = join_request.chat.id
