@@ -130,7 +130,7 @@ def full_userbase():
     user_ids = [doc['_id'] for doc in user_docs]
     return user_ids
 
-async def del_user(user_id: int):
+def del_user(user_id: int):
     user_data.delete_one({'_id': user_id})
         
 # -----Banned-Users-DB----- #
@@ -146,7 +146,7 @@ def full_banuserbase():
     user_ids = [doc['_id'] for doc in user_docs]
     return user_ids
 
-def del_ban_user(user_id: int):
+async def del_ban_user(user_id: int):
     banuser_data.delete_one({'_id': user_id})
         
         
