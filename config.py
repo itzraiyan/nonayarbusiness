@@ -16,7 +16,7 @@ HELP_MSG = """■ 𝗛𝗲𝗹𝗹𝗼, 𝗔𝗱𝗺𝗶𝗻𝘀!\n\n<blockquote
 """  # shown only to admins
 
 # Bot token @Botfather
-TG_BOT_TOKEN = '7786549051:AAEqSb5ketYvO4__lcjgjuMglgL_MMOF3rU'
+TG_BOT_TOKEN = '7652416535:AAFLc7G5IQ8TImESoi_qPidL8g1c3XP4qyI'
 # Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26684254"))
 
@@ -41,7 +41,7 @@ if OWNER_ID not in SUDO:
 PORT = os.environ.get("PORT", "8108")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ulquiorra:ulquiorra@cluster0.72cbp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", " mongodb+srv://Ani_Weebs_Killua_RoBot:Ani_Weebs_Killua_RoBot@cluster0.nvwo2ti.mongodb.net/?appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 # FSUBS configuration
